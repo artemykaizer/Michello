@@ -1,0 +1,46 @@
+@import "mixins"
+@import "sprite"
+
+.sidebar {
+	background-color #c55842
+	height 66px
+}
+
+.sidebar__copyright {
+	font-family "Montserrat"
+	font-size 14px
+	color white
+	font-style bold
+	line-height 66px
+	margin 0px
+}
+
+.social-links__wrapper {
+	padding-top 18px
+	padding-bottom 18px
+	width 125px
+	height 30px
+	float right
+	display flex
+	justify-content space-around
+}
+
+.social-link__ball {
+	sprite($s-socials-ball)
+}
+
+.social-link__pintrest	{
+	sprite($s-socials-pintrest)
+}
+
+.social-link__facebook	{
+	sprite($s-socials-facebook)
+}
+
+.social-link__twitter	{
+	sprite($s-socials-twitter)
+}
+
+.social-link {
+	display block
+}

@@ -1,0 +1,44 @@
+.main-menu {
+	height 122px
+	display flex
+	justify-content space-between
+ }
+
+.main-menu__list{
+	list-style none
+	display flex
+	margin-top 55px
+	margin-bottom 50px
+}
+
+.main-menu__item{
+	font-size 16px
+	line-height 20px
+	font-family "Montserrat"
+	font-weight bold
+	text-transform uppercase
+	margin-right 75px
+	position relative
+}
+
+.main-menu__item__link{
+	text-decoration none
+	color #bcc1c4
+	transition 0.5s
+}
+
+
+.main-menu__item__link:hover::after {
+	content: " "
+	display block
+	width 36px
+	height 3px
+	background-color #c55842
+	color #c55842
+	margin auto
+	margin-top 10px
+}
+
+.main-menu__item__link:hover {
+	color #c55842
+}

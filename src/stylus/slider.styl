@@ -1,0 +1,105 @@
+@import "mixins"
+@import "sprite"
+
+.slider	{
+	background-color #4d4849
+	height 455px
+	padding-top 325px
+	background-size cover
+	background-repeat no-repeat
+}
+
+.slider__header{
+	margin 0px
+	line-height 60px
+	font-size 60px
+	color white
+	font-family "Montserrat"
+	text-align center
+	font-weight bold
+	position relative
+}
+
+.slider__header::after {
+	sprite($s-line-header)
+	content: " "
+	display block
+	margin auto
+	margin-top 25px
+}
+
+.slider__description {
+	width 540px
+	margin auto
+	margin-top 25px
+	font-family "DroidSerif"
+	font-size 14px
+	line-height: 1.143em
+	text-align: center
+	color white
+}
+
+.slider__button {
+	sprite($s-slider-button)
+	background-color transparent
+	border none
+	cursor pointer
+	position absolute
+	margin-top 25px
+	top -450px
+}
+
+.slider__button--prev {
+	left 0px
+}
+
+.main-slider-wrapper {
+	position relative
+}
+
+.slider__button--next{
+	transform rotate(180deg)
+	right 0px
+}
+
+.slider__first-slide {
+	background-image url(../images/20161031-180e3261295fdd53373dc_cropped_1584x780.jpg)
+}
+
+.slider__second-slide {
+	background-image url(../images/780x522_Gastronomie_04.jpg)
+}
+
+.slider__three-slide {
+	background-image url(../images/20161111-c23a1245c3fbf6fbaf0d2_cropped_1584x780.jpg)
+}
+
+#viewport {
+	width: 100%;
+	display: table;
+	overflow: hidden;
+}
+
+#slidewrapper {
+	position: relative;
+	width: calc(100% * 3);
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	transition: 0.3s;
+	transition-timing-function: ease-in-out;
+}
+
+#slidewrapper li {
+	width: calc(100%/3);
+	list-style: none;
+	display: inline;
+	float: left;
+}
+
+.slider__buttons-wrapper {
+ 	width 1200px;
+	position relative
+	margin auto
+}

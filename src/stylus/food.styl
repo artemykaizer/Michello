@@ -1,0 +1,156 @@
+@import "sprite"
+@import "mixins"
+
+.food{
+	display flex
+	flex-wrap wrap
+	padding-bottom 285px
+}
+
+.food__item {
+	width 270px
+	height 410px
+	background-color white
+	margin-right 30px
+	margin-bottom 30px
+	padding-bottom 16px
+}
+
+.food__photo {
+ padding 6px
+ padding-bottom 20px
+
+}
+
+.food__name{
+	margin-top 0px
+	margin-left 15px
+	font-size 18px
+	color #6a6060
+	font-weight bold
+	font-family "Montserrat"
+	margin-bottom 16px
+}
+
+.food__description {
+	padding-left 15px
+	padding-right 24px
+	font-family "Droid Serif"
+	font-size 12px
+	font-style italic
+	color #918686
+	margin-top 0px
+	margin-bottom 25px
+}
+
+.food__review {
+	display inline
+	margin-top 0px
+	margin-bottom 0px
+	color #918686
+	font-size 13px
+	font-weight bold
+}
+
+.star__item {
+	display block
+	padding-right 5px
+}
+
+.food__stars-wrapper{
+	display inline
+	width 80px
+	height 15px
+	display flex
+	align-items center
+	margin-left 9px
+}
+
+
+.star__item--checked{
+	sprite($s-star-checked)
+}
+
+.star__item--unchecked{
+	sprite($s-star-unchecked)
+}
+
+.review-wrapper {
+	display flex
+	margin-left 15px
+	margin-right 10px
+	padding-bottom 20px
+	border-bottom 1px dotted #d5d1d1
+}
+
+.food__price {
+	display inline-block
+	font-family "Montserrat"
+	color #c55842
+	font-size 18
+	font-weight bold
+	margin-left 15px
+	margin-top 23px
+
+}
+
+.food__buy {
+	margin-left 62px
+	font-family "Montserrat"
+	font-size 11px
+	padding-top 10px
+	padding-bottom 10px
+	padding-left 30px
+	background transparent
+	border 1px solid #918686
+	border-radius 2px
+	position relative
+	cursor pointer
+}
+
+
+.food__added {
+	margin-left 62px
+	width 120px
+	font-family "Montserrat"
+	font-size 11px
+	padding-top 10px
+	color white
+	padding-bottom 10px
+	padding-left 0px
+	background #918686
+	border-radius 2px
+	position relative
+	cursor pointer
+}
+
+.food__added::after {
+	content: " "
+	sprite($s-selected)
+	display block
+	position absolute
+	top 10px
+	left 8px
+}
+
+.food__added::before {
+	content: " "
+	display block
+	position absolute
+	width 33px
+	height 35px
+	top 0px
+	right 0px
+	background url("../images/cross.png") no-repeat center center
+	background-color: #c55842
+	border-left 3px solid white
+}
+
+.food__buy::after {
+	content: " "
+	sprite($s-food-cart)
+	display block
+	position absolute
+	top 10px
+	left 8px
+}

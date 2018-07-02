@@ -1,0 +1,75 @@
+@import 'sprite'
+@import 'mixins'
+
+.toolbar {
+	background-color #4d4849
+	height 50px
+}
+
+.toolbar__wrapper {
+	display flex
+	justify-content space-between
+}
+
+
+.toolbar__select-label, .toolbar__select, .toolbar__login {
+	font-size 13px
+	line-height 20px
+}
+
+
+.toolbar__select-label {
+	font-family "Montserrat"
+	color #918686
+	font-weight bold
+}
+
+.option {
+	background none
+	border none
+}
+
+.toolbar__select {
+	color #f6d98f
+	font-family "DroidSerif"
+	font-style italic
+	background none
+	border none
+	appearance none
+	margin-top 15px
+	margin-right 45px
+	margin-bottom 15px
+}
+
+.toolbar__login {
+	display inline-block
+	font-family "Montserrat"
+	color #918686
+	font-weight bold
+	text-decoration none
+	margin-top 15px
+	margin-right 50px
+}
+
+.toolbar__cart{
+		sprite($s-cart)
+		position relative
+		float right
+}
+
+#toolbar__cart__counter {
+	position absolute
+	display block
+	font-family "Montserrat"
+	font-size 9px
+	font-weight bold
+	color white
+	text-align center
+	line-height 14px
+	width 14px
+	height 14px
+	background-color #c55842
+	border-radius 50%
+	margin-left 22px
+	margin-top 11px
+}

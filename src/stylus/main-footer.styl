@@ -1,0 +1,103 @@
+@import "mixins"
+@import "sprite"
+
+.main-footer {
+	background-color #f1eeee
+	padding-top 80px
+}
+
+.main-footer__info__header{
+	margin 0px
+	font-family "Montserrat"
+	font-weight bold
+	font-size 26px
+	text-transform uppercase
+	color #6a6060
+}
+
+.about-us__logo {
+ sprite($s-footer-logo)
+}
+
+.about-us__description{
+	width 200px
+	font-family "Droid Serif"
+	font-size 13px
+	font-style italic
+	color #918686
+	margin-top 40px
+}
+
+.main-footer__opening-table {
+	margin-top 35px
+	font-style italic
+	color #918686
+	font-size 15px
+	width 370px
+}
+
+.main-footer__opening-table tr:nth-child(3) {
+	font-weight bold
+}
+
+.about-us__wrapper {
+	width 370px
+	display flex
+	justify-content space-around
+	margin-bottom 40px
+}
+
+.main-footer__info__tweets {
+	width 370px
+}
+
+.tweet__img {
+	background: url(../images/113615_face_512x512.png)
+	width 100px
+	height 100px
+	border-radius 50%
+	background-size cover
+	float left
+	margin-right 20px
+}
+
+.tweet__name {
+	font-family "Montserrat"
+	font-size 16px
+	color #6a6060
+	font-weight bold
+}
+
+.tweet__description{
+	margin-top 20px
+	margin-bottom 20px
+}
+
+.tweet__description, .tweet__username {
+	font-family "DroidSerif"
+	font-size 13px
+	font-style italic
+}
+
+.tweet__username {
+	color #c55842
+	margin-top 0px
+}
+
+.tweet {
+	margin-top 30px
+}
+
+.main-footer__instagramm-pic {
+margin-top 50px
+}
+
+.main-footer__info__instagramm {
+	width 370px
+}
+
+.main-footer__info-wrapper {
+	display flex
+	justify-content space-around
+	padding-bottom 80px
+}

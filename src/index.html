@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Michello</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="toolbar">
+          <div class="wrapper">
+           <div class="toolbar__wrapper">
+             <div class="toolbar__main-container">
+          <label class="toolbar__select-label">Language:</label>
+            <select class="toolbar__select">
+                <option value="english">English</option>
+            </select>
+           <label class="toolbar__select-label">Currency:</label>
+            <select class="toolbar__select">
+                <option value="dollar">$ Dollar</option>
+            </select>
+            </div>
+
+             <div class="toolbar__main-container">
+            <a href="#" class="toolbar__login">My account</a>
+            <a href="#" class="toolbar__login">Login/register</a>
+            <div class="toolbar__cart">
+              <div id="toolbar__cart__counter">1</div>
+            </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+              <div class="wrapper">
+               <nav class="main-menu">
+                <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__item__link">Home</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__item__link">Menu</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__item__link">Services</a>
+                    </li>
+                </ul>
+
+                    <div class="main-logo"></div>
+
+                  <ul class="main-menu__list">
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__item__link">Blog</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__item__link">About us</a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="#" class="main-menu__item__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+           </div>
+    </header>
+
+    <main>
+ <div class="main-slider-wrapper">
+   <div id="viewport">
+          <ul id="slidewrapper">
+            <li>
+               <section class="slider slider__first-slide">
+                 <div class="wrapper">
+                   <h2 class="slider__header"> Welcome to Michello</h2>
+                   <p class="slider__description">Nullam porttitor mauris nulla. Nulla sagittis scelerisque ex, in iaculis magna aliquam sit amet.
+                           Nunc sed massa condimentum, dapibus nisi gravida, commodo augue.
+                           Phasellus ac urna scelerisque, dictum lorem ac, dapibus quam.</p>
+                  </div>
+                </section>
+            </li>
+            <li>
+              <section class="slider slider__second-slide">
+                <div class="wrapper">
+                  <h2 class="slider__header">Lorem ipsum</h2>
+                  <p class="slider__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                 </div>
+               </section>
+            </li>
+            <li>
+              <section class="slider slider__three-slide">
+                <div class="wrapper">
+                  <h2 class="slider__header">Sed ut perspiciatis unde</h2>
+                  <p class="slider__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                 </div>
+               </section>
+            </li>
+          </ul>
+      </div>
+      <div class="slider__buttons-wrapper">
+        <button class="slider__button slider__button--prev"></button>
+        <button  class="slider__button slider__button--next"></button>
+      </div>
+</div>
+
+        <section class="discover">
+          <div class="wrapper">
+            <h2 class="sections-header">Discover</h2>
+            <p class="sections-header__logo">Today's food</p>
+            <div class="discover__buttons-wrapper">
+                <button class="discover__buttons discover__buttons--active" value="trending">Trending</button>
+                <button class="discover__buttons" value="sales">Sales</button>
+                <button class="discover__buttons" value="disscount">Disscount</button>
+                <button class="discover__buttons" value="votes">Votes</button>
+            </div>
+            <div class="food">
+                <div class="food__item trending">
+                    <img class="food__photo" width="260" height="200" alt="Seafood Pizza" src="../images/SeafoodPizza.jpg">
+                    <h3 class="food__name">Seafood Pizza</h3>
+                    <p class="food__description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                    <div class="review-wrapper">
+                    <p class="food__review">Customer Review</p>
+                    <div class="food__stars-wrapper">
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                    </div>
+                    </div>
+
+                    <p class="food__price">$25.00</p>
+                    <button class="food__added">Selected</button>
+                </div>
+                <div class="food__item trending">
+                    <img class="food__photo" width="260" height="200"  alt="Beef Rice" src="../images/BeefRice.jpg">
+                    <h3 class="food__name">Beef Rice</h3>
+                    <p class="food__description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                    <div class="review-wrapper">
+                    <p class="food__review">Customer Review</p>
+                    <div class="food__stars-wrapper">
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                    </div>
+                    </div>
+                    <p class="food__price">$22.00</p>
+                    <button class="food__buy">Add to Cart</button>
+                </div>
+                <div class="food__item sales">
+                    <img class="food__photo" width="260" height="200"  alt="seafood pasta" src="../images/SeafoodPasta.jpg">
+                    <h3 class="food__name">Seafood Pasta</h3>
+                    <p class="food__description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                    <div class="review-wrapper">
+                    <p class="food__review">Customer Review</p>
+                    <div class="food__stars-wrapper">
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                    </div>
+                    </div>
+                    <p class="food__price">$22.00</p>
+                    <button class="food__buy">Add to Cart</button>
+                </div>
+                <div class="food__item sales">
+                    <img class="food__photo" width="260" height="200"  alt="seafood mixed pasta" src="../images/SeafoodMixedPasta.jpg">
+                    <h3 class="food__name">Seafood Mixed Pasta</h3>
+                    <p class="food__description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                    <div class="review-wrapper">
+                    <p class="food__review">Customer Review</p>
+                    <div class="food__stars-wrapper">
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                    </div>
+                    </div>
+                    <p class="food__price">$22.00</p>
+                    <button class="food__buy">Add to Cart</button>
+                </div>
+                <div class="food__item disscount">
+                    <img class="food__photo" width="260" height="200"  alt="seafood pizza" src="../images/SeafoodPizza.jpg">
+                    <h3 class="food__name">Seafood Pizza</h3>
+                    <p class="food__description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                    <div class="review-wrapper">
+                    <p class="food__review">Customer Review</p>
+                    <div class="food__stars-wrapper">
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                    </div>
+                    </div>
+                    <p class="food__price">$25.00</p>
+                    <button class="food__buy">Add to Cart</button>
+                </div>
+                <div class="food__item disscount">
+                    <img class="food__photo" width="260" height="200" alt="beef rice" src="../images/BeefRice.jpg">
+                    <h3 class="food__name">Beef Rice</h3>
+                    <p class="food__description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                    <div class="review-wrapper">
+                    <p class="food__review">Customer Review</p>
+                    <div class="food__stars-wrapper">
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                    </div>
+                    </div>
+                    <p class="food__price">$22.00</p>
+                    <button class="food__buy">Add to Cart</button>
+                </div>
+                <div class="food__item votes">
+                    <img class="food__photo" width="260" height="200"  alt="seafood pasta" src="../images/SeafoodPasta.jpg">
+                    <h3 class="food__name">Seafood Pasta</h3>
+                    <p class="food__description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                    <div class="review-wrapper">
+                    <p class="food__review">Customer Review</p>
+                    <div class="food__stars-wrapper">
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                    </div>
+                    </div>
+                    <p class="food__price">$22.00</p>
+                    <button class="food__buy">Add to Cart</button>
+                </div>
+                <div class="food__item votes">
+                    <img class="food__photo" width="260" height="200"  alt="seafood mixed pasta" src="../images/SeafoodMixedPasta.jpg">
+                    <h3 class="food__name">Seafood Mixed Pasta</h3>
+                    <p class="food__description">Proin enim dolor, iaculis vel hendrerit ac, rhoncus at sapien. Praesent comm..</p>
+                    <div class="review-wrapper">
+                    <p class="food__review">Customer Review</p>
+                    <div class="food__stars-wrapper">
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--checked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                        <i class="star__item star__item--unchecked"></i>
+                    </div>
+                    </div>
+                    <p class="food__price">$22.00</p>
+                    <button class="food__buy">Add to Cart</button>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="reservation">
+          <div class="wrapper">
+            <h2 class="sections-header sections-header--form">Make A</h2>
+            <p class="sections-header__logo">Reservation</p>
+            <div class="reservation__form__wrapper">
+            <form action="post" class="reservation__main-form">
+                <div class="reservation__form">
+                <label  class="reservation__input-label">Book a table</label>
+                <input type="text" placeholder="Date*" class="reservation__input">
+                <input type="text" placeholder="Time*" class="reservation__input">
+                <input type="text" placeholder="Party*" class="reservation__input">
+             </div>
+
+
+             <div class="reservation__form">
+                <label class="reservation__input-label">Contact Details</label>
+                <input type="text" placeholder="Name*" class="reservation__input">
+                <input type="text" placeholder="Email*" class="reservation__input">
+                <input type="text" placeholder="Phone" class="reservation__input">
+            </div>
+            </div>
+            <div class="reservation__form reservation__form--textarea">
+                <textarea placeholder="Message*" class="reservation__input reservation__input--textarea"></textarea>
+              </div>
+            <button class="reservation__send-button">Make reservation</button>
+            </form>
+          </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+      <div class="wrapper">
+        <div class="main-footer__info-wrapper">
+            <div class="main-footer__about-us">
+                <h2 class="main-footer__info__header">About us</h2>
+                <div class="about-us__wrapper">
+                <div class="about-us__logo"></div>
+                <p class="about-us__description">Proin tincidunt ut purus at finibus. Cras eu aliquam massa. Morbi rutrum nulla vitae diam luctus sagittis. Integer varius elementum arcu a elementum. Vivamus non tellus aliquet.</p>
+              </div>
+                <h2 class="main-footer__info__header">Opening times</h2>
+                <table class="main-footer__opening-table">
+                    <tbody>
+                        <tr>
+                            <td>Monday-Friday</td>
+                            <td>8.00-19.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday-Saturday</td>
+                            <td>7.30-20.30</td>
+                        </tr>
+                        <tr>
+                            <td>Events</td>
+                            <td>Everytimes!</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="main-footer__info__tweets">
+                <h2 class="main-footer__info__header">Latest tweet</h2>
+                <div class="tweets-wrapper">
+                    <div class="tweet">
+                        <div class="tweet__img"></div>
+                        <p class="tweet__name">Evelyn Silvia</p>
+                        <p class="tweet__description">Ut at euismod ipsum, nec varius tortor. Curabitur pulvinar non nibh in.</p>
+                        <p class="tweet__username">@anhgreen @kennyart</p>
+                    </div>
+                    <div class="tweet">
+                        <div class="tweet__img"></div>
+                        <p class="tweet__name">Cheryl Rice</p>
+                        <p class="tweet__description">Ut at euismod ipsum, nec varius tortor. Curabitur pulvinar non nibh in.</p>
+                        <p class="tweet__username">@woorocketst</p>
+                    </div>
+                    <div class="tweet">
+                        <div class="tweet__img"></div>
+                        <p class="tweet__name">Lotus agency</p>
+                        <p class="tweet__description">Ut at euismod ipsum, nec varius tortor. Curabitur pulvinar non nibh in.</p>
+                        <p class="tweet__username">@google @facebook</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer__info__instagramm">
+                <h2 class="main-footer__info__header">Instagram</h2>
+                <img src="../images/instagramm.jpg" width="370" height="370" alt="Instagram" class="main-footer__instagramm-pic">
+            </div>
+        </div>
+      </div>
+        <div class="sidebar">
+          <div class="wrapper">
+            <div class="social-links__wrapper">
+                <a class="social-link social-link__ball"></a>
+                <a class="social-link social-link__pintrest"></a>
+                <a class="social-link social-link__twitter"></a>
+                <a class="social-link social-link__facebook"></a>
+           </div>
+            <p class="sidebar__copyright">Michello © 2015 by WooRockets.com</p>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./js/bundle.js"></script>
+</body>
+</html>
